@@ -1,0 +1,8 @@
+.pylintrc
+_pycache_/
+
+.vscode
+.idea
+
+db.sqlite3
+media/
