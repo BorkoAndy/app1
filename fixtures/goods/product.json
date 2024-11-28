@@ -1,0 +1,646 @@
+[
+    {
+        "model": "goods.product",
+        "pk": 1,
+        "fields": {
+            "name": "1",
+            "slug": "1",
+            "description": "",
+            "image": "goods_images/1.jpg",
+            "price": "0.00",
+            "discount": "0.00",
+            "quantity": 0,
+            "category": 4
+        }
+    },
+    {
+        "model": "goods.product",
+        "pk": 2,
+        "fields": {
+            "name": "3",
+            "slug": "3",
+            "description": "",
+            "image": "goods_images/3.jpg",
+            "price": "5.00",
+            "discount": "0.00",
+            "quantity": 0,
+            "category": 4
+        }
+    },
+    {
+        "model": "goods.product",
+        "pk": 3,
+        "fields": {
+            "name": "5",
+            "slug": "5",
+            "description": "",
+            "image": "goods_images/5.jpg",
+            "price": "5.00",
+            "discount": "0.00",
+            "quantity": 0,
+            "category": 4
+        }
+    },
+    {
+        "model": "goods.product",
+        "pk": 4,
+        "fields": {
+            "name": "7",
+            "slug": "7",
+            "description": "",
+            "image": "goods_images/7.jpg",
+            "price": "5.00",
+            "discount": "0.00",
+            "quantity": 0,
+            "category": 4
+        }
+    },
+    {
+        "model": "goods.product",
+        "pk": 5,
+        "fields": {
+            "name": "9",
+            "slug": "9",
+            "description": "",
+            "image": "goods_images/9.jpg",
+            "price": "5.00",
+            "discount": "0.00",
+            "quantity": 0,
+            "category": 4
+        }
+    },
+    {
+        "model": "goods.product",
+        "pk": 6,
+        "fields": {
+            "name": "11",
+            "slug": "11",
+            "description": "",
+            "image": "goods_images/11.jpg",
+            "price": "5.00",
+            "discount": "0.00",
+            "quantity": 0,
+            "category": 4
+        }
+    },
+    {
+        "model": "goods.product",
+        "pk": 7,
+        "fields": {
+            "name": "13",
+            "slug": "13",
+            "description": "",
+            "image": "goods_images/13.jpg",
+            "price": "5.00",
+            "discount": "0.00",
+            "quantity": 0,
+            "category": 4
+        }
+    },
+    {
+        "model": "goods.product",
+        "pk": 8,
+        "fields": {
+            "name": "15",
+            "slug": "15",
+            "description": "",
+            "image": "goods_images/15.jpg",
+            "price": "5.00",
+            "discount": "0.00",
+            "quantity": 0,
+            "category": 4
+        }
+    },
+    {
+        "model": "goods.product",
+        "pk": 9,
+        "fields": {
+            "name": "17",
+            "slug": "17",
+            "description": "",
+            "image": "goods_images/17.jpg",
+            "price": "5.00",
+            "discount": "0.00",
+            "quantity": 0,
+            "category": 4
+        }
+    },
+    {
+        "model": "goods.product",
+        "pk": 10,
+        "fields": {
+            "name": "19",
+            "slug": "19",
+            "description": "",
+            "image": "",
+            "price": "5.00",
+            "discount": "0.00",
+            "quantity": 0,
+            "category": 4
+        }
+    },
+    {
+        "model": "goods.product",
+        "pk": 11,
+        "fields": {
+            "name": "21",
+            "slug": "21",
+            "description": "",
+            "image": "goods_images/21.jpg",
+            "price": "5.00",
+            "discount": "0.00",
+            "quantity": 0,
+            "category": 4
+        }
+    },
+    {
+        "model": "goods.product",
+        "pk": 12,
+        "fields": {
+            "name": "23",
+            "slug": "23",
+            "description": "",
+            "image": "goods_images/23.jpg",
+            "price": "5.00",
+            "discount": "0.00",
+            "quantity": 0,
+            "category": 4
+        }
+    },
+    {
+        "model": "goods.product",
+        "pk": 13,
+        "fields": {
+            "name": "25",
+            "slug": "25",
+            "description": "",
+            "image": "goods_images/25.jpg",
+            "price": "5.00",
+            "discount": "0.00",
+            "quantity": 0,
+            "category": 4
+        }
+    },
+    {
+        "model": "goods.product",
+        "pk": 14,
+        "fields": {
+            "name": "26",
+            "slug": "26",
+            "description": "",
+            "image": "",
+            "price": "5.00",
+            "discount": "0.00",
+            "quantity": 0,
+            "category": 4
+        }
+    },
+    {
+        "model": "goods.product",
+        "pk": 15,
+        "fields": {
+            "name": "27",
+            "slug": "27",
+            "description": "",
+            "image": "goods_images/27.jpg",
+            "price": "5.00",
+            "discount": "0.00",
+            "quantity": 0,
+            "category": 4
+        }
+    },
+    {
+        "model": "goods.product",
+        "pk": 16,
+        "fields": {
+            "name": "28",
+            "slug": "28",
+            "description": "",
+            "image": "goods_images/28.jpg",
+            "price": "5.00",
+            "discount": "0.00",
+            "quantity": 0,
+            "category": 4
+        }
+    },
+    {
+        "model": "goods.product",
+        "pk": 17,
+        "fields": {
+            "name": "29",
+            "slug": "29",
+            "description": "",
+            "image": "",
+            "price": "5.00",
+            "discount": "0.00",
+            "quantity": 0,
+            "category": 4
+        }
+    },
+    {
+        "model": "goods.product",
+        "pk": 18,
+        "fields": {
+            "name": "30",
+            "slug": "30",
+            "description": "",
+            "image": "",
+            "price": "5.00",
+            "discount": "0.00",
+            "quantity": 0,
+            "category": 4
+        }
+    },
+    {
+        "model": "goods.product",
+        "pk": 19,
+        "fields": {
+            "name": "31",
+            "slug": "31",
+            "description": "",
+            "image": "goods_images/31.jpg",
+            "price": "5.00",
+            "discount": "0.00",
+            "quantity": 0,
+            "category": 4
+        }
+    },
+    {
+        "model": "goods.product",
+        "pk": 20,
+        "fields": {
+            "name": "32",
+            "slug": "32",
+            "description": "",
+            "image": "goods_images/32.jpg",
+            "price": "5.00",
+            "discount": "0.00",
+            "quantity": 0,
+            "category": 4
+        }
+    },
+    {
+        "model": "goods.product",
+        "pk": 21,
+        "fields": {
+            "name": "33",
+            "slug": "33",
+            "description": "",
+            "image": "goods_images/33.jpg",
+            "price": "5.00",
+            "discount": "0.00",
+            "quantity": 0,
+            "category": 4
+        }
+    },
+    {
+        "model": "goods.product",
+        "pk": 22,
+        "fields": {
+            "name": "34",
+            "slug": "34",
+            "description": "",
+            "image": "goods_images/34.jpg",
+            "price": "5.00",
+            "discount": "0.00",
+            "quantity": 0,
+            "category": 4
+        }
+    },
+    {
+        "model": "goods.product",
+        "pk": 23,
+        "fields": {
+            "name": "35",
+            "slug": "35",
+            "description": "",
+            "image": "goods_images/35.jpg",
+            "price": "5.00",
+            "discount": "0.00",
+            "quantity": 0,
+            "category": 4
+        }
+    },
+    {
+        "model": "goods.product",
+        "pk": 24,
+        "fields": {
+            "name": "36",
+            "slug": "36",
+            "description": "",
+            "image": "goods_images/36.jpg",
+            "price": "5.00",
+            "discount": "0.00",
+            "quantity": 0,
+            "category": 4
+        }
+    },
+    {
+        "model": "goods.product",
+        "pk": 25,
+        "fields": {
+            "name": "37",
+            "slug": "37",
+            "description": "",
+            "image": "goods_images/37.jpg",
+            "price": "5.00",
+            "discount": "0.00",
+            "quantity": 0,
+            "category": 4
+        }
+    },
+    {
+        "model": "goods.product",
+        "pk": 26,
+        "fields": {
+            "name": "38",
+            "slug": "38",
+            "description": "",
+            "image": "goods_images/38.jpg",
+            "price": "5.00",
+            "discount": "0.00",
+            "quantity": 0,
+            "category": 4
+        }
+    },
+    {
+        "model": "goods.product",
+        "pk": 27,
+        "fields": {
+            "name": "39",
+            "slug": "39",
+            "description": "",
+            "image": "goods_images/39.jpg",
+            "price": "5.00",
+            "discount": "0.00",
+            "quantity": 0,
+            "category": 4
+        }
+    },
+    {
+        "model": "goods.product",
+        "pk": 28,
+        "fields": {
+            "name": "40",
+            "slug": "40",
+            "description": "",
+            "image": "goods_images/40.jpg",
+            "price": "5.00",
+            "discount": "0.00",
+            "quantity": 0,
+            "category": 4
+        }
+    },
+    {
+        "model": "goods.product",
+        "pk": 29,
+        "fields": {
+            "name": "41",
+            "slug": "41",
+            "description": "",
+            "image": "goods_images/41.jpg",
+            "price": "5.00",
+            "discount": "0.00",
+            "quantity": 0,
+            "category": 4
+        }
+    },
+    {
+        "model": "goods.product",
+        "pk": 30,
+        "fields": {
+            "name": "42",
+            "slug": "42",
+            "description": "",
+            "image": "goods_images/42.jpg",
+            "price": "5.00",
+            "discount": "0.00",
+            "quantity": 0,
+            "category": 4
+        }
+    },
+    {
+        "model": "goods.product",
+        "pk": 31,
+        "fields": {
+            "name": "43",
+            "slug": "43",
+            "description": "",
+            "image": "goods_images/43.jpg",
+            "price": "5.00",
+            "discount": "0.00",
+            "quantity": 0,
+            "category": 4
+        }
+    },
+    {
+        "model": "goods.product",
+        "pk": 32,
+        "fields": {
+            "name": "44",
+            "slug": "44",
+            "description": "",
+            "image": "goods_images/44.jpg",
+            "price": "5.00",
+            "discount": "0.00",
+            "quantity": 0,
+            "category": 4
+        }
+    },
+    {
+        "model": "goods.product",
+        "pk": 33,
+        "fields": {
+            "name": "45",
+            "slug": "45",
+            "description": "",
+            "image": "goods_images/45.jpg",
+            "price": "5.00",
+            "discount": "0.00",
+            "quantity": 0,
+            "category": 4
+        }
+    },
+    {
+        "model": "goods.product",
+        "pk": 34,
+        "fields": {
+            "name": "46",
+            "slug": "46",
+            "description": "",
+            "image": "",
+            "price": "5.00",
+            "discount": "0.00",
+            "quantity": 0,
+            "category": 4
+        }
+    },
+    {
+        "model": "goods.product",
+        "pk": 35,
+        "fields": {
+            "name": "2",
+            "slug": "2",
+            "description": "",
+            "image": "goods_images/2.jpg",
+            "price": "12.00",
+            "discount": "0.00",
+            "quantity": 0,
+            "category": 3
+        }
+    },
+    {
+        "model": "goods.product",
+        "pk": 36,
+        "fields": {
+            "name": "4",
+            "slug": "4",
+            "description": "",
+            "image": "goods_images/4.jpg",
+            "price": "12.00",
+            "discount": "0.00",
+            "quantity": 0,
+            "category": 3
+        }
+    },
+    {
+        "model": "goods.product",
+        "pk": 37,
+        "fields": {
+            "name": "6",
+            "slug": "6",
+            "description": "",
+            "image": "goods_images/6.jpg",
+            "price": "12.00",
+            "discount": "0.00",
+            "quantity": 0,
+            "category": 3
+        }
+    },
+    {
+        "model": "goods.product",
+        "pk": 38,
+        "fields": {
+            "name": "8",
+            "slug": "8",
+            "description": "",
+            "image": "goods_images/8.jpg",
+            "price": "20.00",
+            "discount": "0.00",
+            "quantity": 0,
+            "category": 3
+        }
+    },
+    {
+        "model": "goods.product",
+        "pk": 39,
+        "fields": {
+            "name": "10",
+            "slug": "10",
+            "description": "",
+            "image": "goods_images/10.jpg",
+            "price": "12.00",
+            "discount": "0.00",
+            "quantity": 0,
+            "category": 3
+        }
+    },
+    {
+        "model": "goods.product",
+        "pk": 40,
+        "fields": {
+            "name": "12",
+            "slug": "12",
+            "description": "",
+            "image": "goods_images/12.jpg",
+            "price": "12.00",
+            "discount": "0.00",
+            "quantity": 0,
+            "category": 3
+        }
+    },
+    {
+        "model": "goods.product",
+        "pk": 41,
+        "fields": {
+            "name": "14",
+            "slug": "14",
+            "description": "",
+            "image": "goods_images/14.jpg",
+            "price": "12.00",
+            "discount": "0.00",
+            "quantity": 0,
+            "category": 3
+        }
+    },
+    {
+        "model": "goods.product",
+        "pk": 42,
+        "fields": {
+            "name": "16",
+            "slug": "16",
+            "description": "",
+            "image": "goods_images/16.jpg",
+            "price": "12.00",
+            "discount": "0.00",
+            "quantity": 0,
+            "category": 3
+        }
+    },
+    {
+        "model": "goods.product",
+        "pk": 43,
+        "fields": {
+            "name": "18",
+            "slug": "18",
+            "description": "",
+            "image": "goods_images/18.jpg",
+            "price": "12.00",
+            "discount": "0.00",
+            "quantity": 0,
+            "category": 3
+        }
+    },
+    {
+        "model": "goods.product",
+        "pk": 44,
+        "fields": {
+            "name": "20",
+            "slug": "20",
+            "description": "",
+            "image": "goods_images/20.jpg",
+            "price": "12.00",
+            "discount": "0.00",
+            "quantity": 0,
+            "category": 3
+        }
+    },
+    {
+        "model": "goods.product",
+        "pk": 45,
+        "fields": {
+            "name": "22",
+            "slug": "22",
+            "description": "",
+            "image": "goods_images/22.jpg",
+            "price": "20.00",
+            "discount": "0.00",
+            "quantity": 0,
+            "category": 3
+        }
+    },
+    {
+        "model": "goods.product",
+        "pk": 46,
+        "fields": {
+            "name": "24",
+            "slug": "24",
+            "description": "",
+            "image": "goods_images/24.jpg",
+            "price": "5.00",
+            "discount": "0.00",
+            "quantity": 0,
+            "category": 3
+        }
+    }
+]

@@ -58,7 +58,7 @@
                                 <li><a class="dropdown-item  text-white" href="carts/cart.html">Cart</a></li>
                                 <li><a class="dropdown-item  text-white" href="users/profile.html">Personal account</a>
                                 </li>
-                                <li><a class="dropdown-item  text-white" href="#">Admin</a></li>
+                                <li><a class="dropdown-item  text-white" href="{% url "admin:index" %}">Admin</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
@@ -87,13 +87,10 @@
                             height="16">
                     </button>
                     <ul class="dropdown-menu bg-dark" data-bs-theme="dark">
-                        <li><a class="dropdown-item text-white" href="{% url 'catalog:index' %}">All products</a></li>
-                        <li><a class="dropdown-item text-white" href="{% url 'catalog:index' %}">Cat1</a></li>
-                        <li><a class="dropdown-item text-white" href="{% url 'catalog:index' %}">Cat2</a></li>
-                        <li><a class="dropdown-item text-white" href="{% url 'catalog:index' %}">Cat3</a></li>
-                        <li><a class="dropdown-item text-white" href="{% url 'catalog:index' %}">Cat4</a></li>
-                        <li><a class="dropdown-item text-white" href="{% url 'catalog:index' %}">Cat5</a></li>
-                        <li><a class="dropdown-item text-white" href="{% url 'catalog:index' %}">Cat6</a></li>
+                        {% comment %} <li><a class="dropdown-item text-white" href="{% url 'catalog:index' %}">All products</a></li> {% endcomment %}
+                        {% for category in categories %}
+                            <li><a class="dropdown-item text-white" href="{% url 'catalog:index' %}">{{ category.name }}</a></li>
+                        {% endfor %}
                     </ul>
                 </div>
                 <!-- Cart icon calls separate window -->
