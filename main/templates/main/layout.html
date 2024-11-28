@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="{% static "files/css/bootstrap/bootstrap.min.css" %}">
     <link rel="stylesheet" href="{% static "files/css/my_css.css"%}">
     <!--Footer style for main page -->
-    {% block  css %}
+    {% block  head %}
     {% endblock  %}
 
     <!-- Favicons for different platforms -->
@@ -24,7 +24,7 @@
     <header>
         <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
             <div class="container">
-                <a class="navbar-brand" href="index.html">Home</a>
+                <a class="navbar-brand" href="{% url 'main:index' %}">Home</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -40,7 +40,7 @@
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item  text-white" href="#">Delivery and payment</a></li>
                                 <li><a class="dropdown-item  text-white" href="#">Contacs</a></li>
-                                <li><a class="dropdown-item  text-white" href="#">About us</a></li>
+                                <li><a class="dropdown-item  text-white" href="{% url 'main:about' %}">About us</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
@@ -87,13 +87,13 @@
                             height="16">
                     </button>
                     <ul class="dropdown-menu bg-dark" data-bs-theme="dark">
-                        <li><a class="dropdown-item text-white" href="goods/catalog.html">All products</a></li>
-                        <li><a class="dropdown-item text-white" href="goods/catalog.html">Cat1</a></li>
-                        <li><a class="dropdown-item text-white" href="goods/catalog.html">Cat2</a></li>
-                        <li><a class="dropdown-item text-white" href="goods/catalog.html">Cat3</a></li>
-                        <li><a class="dropdown-item text-white" href="goods/catalog.html">Cat4</a></li>
-                        <li><a class="dropdown-item text-white" href="goods/catalog.html">Cat5</a></li>
-                        <li><a class="dropdown-item text-white" href="goods/catalog.html">Cat6</a></li>
+                        <li><a class="dropdown-item text-white" href="{% url 'catalog:index' %}">All products</a></li>
+                        <li><a class="dropdown-item text-white" href="{% url 'catalog:index' %}">Cat1</a></li>
+                        <li><a class="dropdown-item text-white" href="{% url 'catalog:index' %}">Cat2</a></li>
+                        <li><a class="dropdown-item text-white" href="{% url 'catalog:index' %}">Cat3</a></li>
+                        <li><a class="dropdown-item text-white" href="{% url 'catalog:index' %}">Cat4</a></li>
+                        <li><a class="dropdown-item text-white" href="{% url 'catalog:index' %}">Cat5</a></li>
+                        <li><a class="dropdown-item text-white" href="{% url 'catalog:index' %}">Cat6</a></li>
                     </ul>
                 </div>
                 <!-- Cart icon calls separate window -->
