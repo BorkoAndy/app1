@@ -18,9 +18,17 @@ class Product(models.Model):
     description = models.TextField(blank=True, null=True)
     image = models.ImageField(upload_to='goods_images', blank=True, null=True)
     price = models.DecimalField(default=0.00, max_digits=7, decimal_places=2)
-    discount = models.DecimalField(default=0.00, max_digits=7, decimal_places=2)
+    discount = models.DecimalField(default=0.00, max_digits=4, decimal_places=2)
     quantity = models.PositiveIntegerField(default=0)
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
 
     def __str__(self):
         return f"{self.name} {self.quantity}"
+    
+    def show_id(self):
+        return f"{self.id:05}"
+    
+    def price_sale(self):
+        if self.discount:
+            return round(self.price - self.price * self.discount / 100, 2)
+        return self.price
