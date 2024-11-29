@@ -22,6 +22,9 @@ class Product(models.Model):
     quantity = models.PositiveIntegerField(default=0)
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
 
+    class Meta:
+        ordering = ('id',)
+        
     def __str__(self):
         return f"{self.name} {self.quantity}"
     
