@@ -1,0 +1,26 @@
+[
+    {
+        "model": "goods.category",
+        "pk": 2,
+        "fields": {
+            "name": "All products",
+            "slug": "all"
+        }
+    },
+    {
+        "model": "goods.category",
+        "pk": 3,
+        "fields": {
+            "name": "Soap",
+            "slug": "soap"
+        }
+    },
+    {
+        "model": "goods.category",
+        "pk": 4,
+        "fields": {
+            "name": "Keychains",
+            "slug": "keychain"
+        }
+    }
+]
