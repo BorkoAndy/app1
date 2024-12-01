@@ -8,7 +8,8 @@
                 <div class="col-md-6 bg-white p-4 mb-4 mx-3 rounded custom-shadow">
                     <h2 class="text-center mb-4">Login</h2>
                     <form action="{% url "user:login" %}" method="post">
-                        {% csrf_token %}                                             
+                        {% csrf_token %}  
+                        <input type="hidden" name="next" value={{ request.GET.next }}>                                           
                         <div class="mb-3">
                             <label for="{{ form.username.id_for_label }}" class="form-label">Username</label>
                             {{ form.username }}

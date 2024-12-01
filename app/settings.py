@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 
 from pathlib import Path
 
-from django.conf.global_settings import MEDIA_ROOT, MEDIA_URL
+from django.conf.global_settings import LOGIN_URL, MEDIA_ROOT, MEDIA_URL
 
 
 
@@ -52,6 +52,7 @@ INSTALLED_APPS = [
     'main',
     'goods',
     'users',
+    'cart',
 ]
 
 MIDDLEWARE = [
@@ -155,3 +156,4 @@ MEDIA_ROOT = BASE_DIR / 'media'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 AUTH_USER_MODEL = 'users.User'
+LOGIN_URL = '/user/login/'
