@@ -181,10 +181,12 @@
                 <div class="col-lg-2">
                     <!-- Empty (for now) block -->
                 </div>
-
-                {% include "includes/notifications.html" %}
-                {% block page_content %}
-                {% endblock %}
+                <div class="col-lg-10">
+                    {% include "includes/notifications.html" %}
+                    
+                    {% block page_content %}
+                    {% endblock %}
+                </div>
             </div>
         </div>
     </section>
