@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 from django.contrib import auth, messages
 from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import redirect, render
@@ -6,6 +7,14 @@ from traitlets import Instance
 from django.contrib.auth.decorators import login_required
 
 from users.forms import UserLoginForm, UserProfileForm, UserRegistrationForm
+=======
+from django.contrib import auth
+from django.http import HttpResponse, HttpResponseRedirect
+from django.shortcuts import redirect, render
+from django.urls import reverse
+
+from users.forms import UserLoginForm, UserRegistrationForm
+>>>>>>> da3582c0a317addf7b9646b91452defa9e38b670
 
 # Create your views here.
 
@@ -18,7 +27,10 @@ def login(request):
             user = auth.authenticate(username=username, password=password)
             if user:
                 auth.login(request, user)
+<<<<<<< HEAD
                 messages.success(request, "Succesfully logged")
+=======
+>>>>>>> da3582c0a317addf7b9646b91452defa9e38b670
                 return HttpResponseRedirect(reverse('main:index'))
     else:
         form = UserLoginForm()
@@ -27,10 +39,16 @@ def login(request):
         'form': form     
     }    
     return render (request, 'users/login.html', context)
+<<<<<<< HEAD
 @login_required
 def logout(request):
     auth.logout(request) 
     messages.success(request, "Succesfully logged out")    
+=======
+
+def logout(request):
+    auth.logout(request)     
+>>>>>>> da3582c0a317addf7b9646b91452defa9e38b670
     return redirect(reverse('main:index'))
 
 
@@ -41,7 +59,10 @@ def registration(request):
             form.save()
             user = form.instance
             auth.login(request, user)
+<<<<<<< HEAD
             messages.success(request, "Succesfully registered and logged in")
+=======
+>>>>>>> da3582c0a317addf7b9646b91452defa9e38b670
             return HttpResponseRedirect(reverse('main:index'))
     else:
         form = UserRegistrationForm()
@@ -51,6 +72,7 @@ def registration(request):
     }    
     return render (request, 'users/registration.html', context)
 
+<<<<<<< HEAD
 @login_required
 def profile(request):
     if request.method == "POST":
@@ -63,5 +85,10 @@ def profile(request):
         form = UserProfileForm(instance=request.user)    
     context = { 
         'form': form       
+=======
+
+def profile(request):
+    context = {        
+>>>>>>> da3582c0a317addf7b9646b91452defa9e38b670
     }    
     return render (request, 'users/profile.html', context)

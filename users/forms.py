@@ -1,7 +1,12 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 from dataclasses import fields
 from django import forms
 from django.contrib.auth.forms import AuthenticationForm, UserCreationForm, UserChangeForm
+=======
+from django import forms
+from django.contrib.auth.forms import AuthenticationForm, UserCreationForm
+>>>>>>> da3582c0a317addf7b9646b91452defa9e38b670
 =======
 from django import forms
 from django.contrib.auth.forms import AuthenticationForm, UserCreationForm
@@ -34,7 +39,10 @@ class UserRegistrationForm(UserCreationForm):
             "last_name",
             "username",
 <<<<<<< HEAD
+<<<<<<< HEAD
             'email',
+=======
+>>>>>>> da3582c0a317addf7b9646b91452defa9e38b670
 =======
 >>>>>>> da3582c0a317addf7b9646b91452defa9e38b670
             "password1",
@@ -47,6 +55,7 @@ class UserRegistrationForm(UserCreationForm):
     email = forms.CharField()
     password1 = forms.CharField()        
     password2 = forms.CharField()
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 class UserProfileForm(UserChangeForm):
@@ -66,6 +75,8 @@ class UserProfileForm(UserChangeForm):
     username = forms.CharField()
     email = forms.CharField()
     
+=======
+>>>>>>> da3582c0a317addf7b9646b91452defa9e38b670
 =======
 >>>>>>> da3582c0a317addf7b9646b91452defa9e38b670
         
