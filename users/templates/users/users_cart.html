@@ -1,6 +1,9 @@
 {% extends "layout.html" %}
 {% load static %}
 
+{% load cart_tags %}
+{% user_carts request as carts %}
+
 {% block page_content %}
 <div class="row">
     <div class="container mt-5">

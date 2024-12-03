@@ -101,37 +101,8 @@
                     </ul>
                 </div>
                 <!-- Cart icon calls separate window -->
-                <div>
-                    <button type="button" class="btn btn-dark btn-secondary d-flex" id="modalButton"
-                        aria-expanded="false">
-                        <img class="mx-1" src="{% static "files/icons/basket2-fill.svg"%}" alt="Catalog Icon" width="24"
-                            height="24">
-                        <span id="goods-in-cart-count">0</span>
-                    </button>
-                </div>
-                <!-- Cart window layout -->
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog modal-dialog-scrollable">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <h3 class="text-center mb-4">Cart</h3>
-                            <div class="container" id="cart-items-container">
-                                <!-- Cart layout -->
-                                    {% include "cart/include/included_cart.html" %}
-                                <!-- End of cart layout -->
-                                {% comment %} </div> {% endcomment %}
-                                <a class="btn btn-dark" href="orders/create_order.html">
-                                    Make order
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                {% block modal_cart %}                
+                {% endblock  %}
                 <!-- End of cart window -->
             </div>
         </div>
