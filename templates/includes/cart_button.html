@@ -26,10 +26,11 @@ aria-hidden="true">
                 <!-- Cart layout -->
                     {% include "cart/include/included_cart.html" %}
                 <!-- End of cart layout -->
-                {% comment %} </div> {% endcomment %}
-                <a class="btn btn-dark" href="orders/create_order.html">
-                    Make order
-                </a>
+                {% if carts %}
+                    <a class="btn btn-dark" href="orders/create_order.html">
+                        Make order
+                    </a>
+                {% endif %}
             </div>
         </div>
     </div>

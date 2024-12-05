@@ -2,13 +2,15 @@
 {% load static %}
 
 {% load cart_tags %}
-{% user_carts request as carts %}
+
 
 {% block head %}
 <title>Handmade - User profile</title>
 {% endblock %}
 
 {% block page_content %}
+{% user_carts request as carts %}
+
 <div class="row">
     <div class="container mt-5">
         <div class="row">
@@ -83,6 +85,7 @@
                 </div>
             {% comment %} </div> {% endcomment %}
             <!-- Cart -->
+            
             <div class="col-md-7">
                 <div class=" bg-white p-4 mb-4 mx-2 rounded custom-shadow">
                     <h3 class="text-center mb-4">Cart</h3>
@@ -90,10 +93,12 @@
                         <!-- Cart layout -->
                             {% include "cart/include/included_cart.html" %}
                         <!-- End of cart layout -->
-                    </div>
-                    <a class="btn btn-dark" href="../orders/create_order.html">
-                        Make an order
-                    </a>
+                    
+                    {% if carts %}                    
+                        <a class="btn btn-dark" href="../orders/create_order.html">
+                            Make an order
+                        </a>
+                    {% endif %}</div>
                 </div>
             </div>
             <!-- Order making -->
