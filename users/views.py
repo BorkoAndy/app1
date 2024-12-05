@@ -6,7 +6,7 @@ from traitlets import Instance
 from django.contrib.auth.decorators import login_required
 
 from users.forms import UserLoginForm, UserProfileForm, UserRegistrationForm
-
+from cart.models import Cart
 # Create your views here.
 
 def login(request):
@@ -16,10 +16,16 @@ def login(request):
             username = request.POST['username']
             password = request.POST['password']
             user = auth.authenticate(username=username, password=password)
+            
+            session_key= request.session.session_key
+
             if user:
                 auth.login(request, user)
                 messages.success(request, "Succesfully logged")
 
+                if session_key:
+                    Cart.objects.filter(session_key=session_key).update(user=user)
+                
                 redirect_page = request.POST.get('next', None)
                 if redirect_page and redirect_page != reverse('user:logout'):
                     return HttpResponseRedirect(request.POST.get('next'))
@@ -43,10 +49,17 @@ def logout(request):
 def registration(request):
     if request.method == "POST":
         form = UserRegistrationForm(data=request.POST)
-        if form.is_valid():            
+        if form.is_valid(): 
+
+            session_key= request.session.session_key
+
             form.save()
             user = form.instance
             auth.login(request, user)
+
+            if session_key:
+                    Cart.objects.filter(session_key=session_key).update(user=user)
+
             messages.success(request, "Succesfully registered and logged in")
             return HttpResponseRedirect(reverse('main:index'))
     else:
