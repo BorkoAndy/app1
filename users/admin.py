@@ -5,8 +5,7 @@ from cart.admin import CartTabAdmin
 from orders.admin import OrderTabulareAdmin
 from .models import User
 
-# Register your models here.
-# admin.site.register(User)
+
 
 @admin.register(User)
 class UserAdmin(admin.ModelAdmin):
