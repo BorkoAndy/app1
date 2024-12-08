@@ -7,7 +7,6 @@ from cart.utils import get_user_carts
 from goods.models import Product
 from users.views import users_cart
 
-# Create your views here.
 
 def cart_add(request):
     product_id = request.POST.get("product_id")

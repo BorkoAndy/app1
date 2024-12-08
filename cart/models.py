@@ -3,7 +3,6 @@ from django.db import models
 from goods.models import Product
 from users.models import User
 
-# Create your models here.
 class CartQuerySet(models.QuerySet):
     
     def total_price(self):
