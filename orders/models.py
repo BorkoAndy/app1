@@ -21,8 +21,8 @@ class Order(models.Model):
     created_timestamp = models.DateTimeField(auto_now_add=True)
     phone_number = models.CharField(max_length=20)
     requires_delivery = models.BooleanField(default=False)
-    delivery_addres = models.TextField(null=True, blank=True)
-    peyment_on_get = models.BooleanField(default=False)
+    delivery_address = models.TextField(null=True, blank=True)
+    payment_on_get = models.BooleanField(default=False)
     is_paid = models.BooleanField(default=False)
     status = models.CharField(max_length=50, default="In process")
 

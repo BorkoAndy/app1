@@ -26,11 +26,7 @@ aria-hidden="true">
                 <!-- Cart layout -->
                     {% include "cart/include/included_cart.html" %}
                 <!-- End of cart layout -->
-                {% if carts %}
-                    <a class="btn btn-dark" href="{% url "orders:create_order" %}">
-                        Make order
-                    </a>
-                {% endif %}
+                
             </div>
         </div>
     </div>

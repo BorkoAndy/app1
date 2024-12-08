@@ -82,10 +82,8 @@
                         </div>
                          
                     </form>
-                </div>
-            {% comment %} </div> {% endcomment %}
-            <!-- Cart -->
-            
+                </div>            
+            <!-- Cart -->            
             <div class="col-md-7">
                 <div class=" bg-white p-4 mb-4 mx-2 rounded custom-shadow">
                     <h3 class="text-center mb-4">Cart</h3>
@@ -94,11 +92,7 @@
                             {% include "cart/include/included_cart.html" %}
                         <!-- End of cart layout -->
                     
-                    {% if carts %}                    
-                        <a class="btn btn-dark" href="../orders/create_order.html">
-                            Make an order
-                        </a>
-                    {% endif %}</div>
+                   
                 </div>
             </div>
             <!-- Order making -->
@@ -108,13 +102,14 @@
                     <!-- Orders layout -->
                     <div class="container">
                         <div class="accordion" id="accordionExample">
+                            {% for order in orders %}                        
                             <div class="accordion-item">
-                                <h2 class="accordion-header" id="heading1">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
-                                        Order № 256 - 09 September 2023 9:04 | Status:<strong class="mx-2">In process</strong>
+                                <h2 class="accordion-header" id="heading{{ order.id }}">
+                                    <button class="accordion-button {% if order != orders.0 %}collapsed{% endif %}" type="button" data-bs-toggle="collapse" data-bs-target="#collapse{{ order.id }}" aria-expanded="false" aria-controls="collapse{{ order.id }}">
+                                        Order №{{ order.id }} - {{ order.created_timestamp }} | Status:<strong class="mx-2">{{ order.status }}</strong>
                                     </button>
                                 </h2>
-                                <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="heading1" data-bs-parent="#accordionExample">
+                                <div id="collapse{{ order.id }}" class="accordion-collapse collapse{% if order == orders.0 %} show{% endif %}" aria-labelledby="heading{{ order.id }}" data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
                                         <table class="table table-dark table-hover">
                                             <thead>
@@ -126,13 +121,15 @@
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                <tr>
-                                                    <td><a class="text-white" href="#">Set 1</a></td>
-                                                    <td>1</td>
-                                                    <td>255.00 $</td>
-                                                    <td>255.00 $</td>
-                                                    
-                                                </tr>
+                                                {% for item in order.orderitem_set.all %}
+                                                    <tr>
+                                                        <td><a class="text-white" href="{% url "goods:product" item.product.slug %}">{{ item.product.name }}</a></td>
+                                                        <td>{{ item.quantity }}</td>
+                                                        <td>{{ item.price }} $</td>
+                                                        <td>{{ item.products_price }} $</td>
+                                                        
+                                                    </tr>                                                
+                                                {% endfor %}
                                             </tbody>
                                         </table>
                                         <div class="d-flex justify-content-between">
@@ -143,36 +140,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="heading2">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
-                                        Order № 248 - 01 August 2023 11:28 | Status: <strong>Delivered</strong>
-                                    </button>
-                                </h2>
-                                <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        <table class="table table-dark table-hover">
-                                            <thead>
-                                                <tr>
-                                                    <th>Product</th>
-                                                    <th>Amount</th>
-                                                    <th>Price</th>
-                                                    <th>Total price</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td><a class="text-white" href="#">Set 2</a></td>
-                                                    <td>2</td>
-                                                    <td>30.00 $</td>
-                                                    <td>60.00 $</td>
-                                                    
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
+                            {% endfor %}                            
                         </div>
                     </div>
                     <!-- Закончилась разметка заказов -->

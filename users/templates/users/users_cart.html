@@ -15,11 +15,11 @@
                     <!-- Cart layout -->
                     {% include "cart/include/included_cart.html" %}                   
                      
-                    {% if carts %}                   
+                    {% comment %} {% if carts %}                   
                         <a class="btn btn-dark" href="{% url "orders:create_order" %}">
                             Order
                         </a>
-                    {% endif %}
+                    {% endif %} {% endcomment %}
                     
                 </div>
             </div>
