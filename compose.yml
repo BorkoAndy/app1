@@ -1,9 +1,0 @@
-services:
-  shop:
-    image: python
-    container_name: shop_container
-    ports:
-      - 127.0.0.1:8000:80
-    volumes:
-      - ./site:/usr/share/nginx/html
-    command: bash -c "python manage.py migrate && python manage.py runserver"
